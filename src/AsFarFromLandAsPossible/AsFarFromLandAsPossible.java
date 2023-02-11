@@ -7,9 +7,9 @@ class Scratch {
     public static void main(String[] args) {
         Solution sol = new Solution();
         {
-            System.out.println(sol.maxDistance(new int[][]{ new int[]{1,0,1},new int[]{0,0,0},new int[]{1,0,1}}));
-            System.out.println(sol.maxDistance(new int[][]{ new int[]{1,0,0},new int[]{0,0,0},new int[]{0,0,0}}));
-            System.out.println(sol.maxDistance(new int[][]{ new int[]{0,0,0},new int[]{0,0,0},new int[]{0,0,0}}));
+            System.out.println(sol.maxDistance(new int[][]{new int[]{1, 0, 1}, new int[]{0, 0, 0}, new int[]{1, 0, 1}}));
+            System.out.println(sol.maxDistance(new int[][]{new int[]{1, 0, 0}, new int[]{0, 0, 0}, new int[]{0, 0, 0}}));
+            System.out.println(sol.maxDistance(new int[][]{new int[]{0, 0, 0}, new int[]{0, 0, 0}, new int[]{0, 0, 0}}));
         }
     }
 }

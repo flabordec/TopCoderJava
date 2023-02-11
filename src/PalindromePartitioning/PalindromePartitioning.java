@@ -44,7 +44,7 @@ class Solution {
                 List<String> newPartialSolution = new ArrayList<>();
                 newPartialSolution.addAll(partialSolution);
                 newPartialSolution.add(s.substring(start, end + 1));
-                findWord(s, end+1, solution, newPartialSolution);
+                findWord(s, end + 1, solution, newPartialSolution);
             }
         }
     }

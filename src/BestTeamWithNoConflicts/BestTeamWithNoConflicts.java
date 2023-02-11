@@ -6,11 +6,11 @@ class Scratch {
         {
 //            System.out.println(sol.bestTeamScore(new int[]{1,3,5,10,15 }, new int[]{1,2,3,4,5 }));
 //            System.out.println(sol.bestTeamScore(new int[]{4,5,6,5 }, new int[]{2,1,2,1 }));
-            System.out.println(sol.bestTeamScore(new int[]{1,2,3,5 }, new int[]{8,9,10,1 })); // 6
-            System.out.println(sol.bestTeamScore(new int[]{6,4,5,5 }, new int[]{2,2,1,1 })); // 16
-            System.out.println(sol.bestTeamScore(new int[]{4,4,5 }, new int[]{2,2,1 })); // 8
-            System.out.println(sol.bestTeamScore(new int[]{4,5 }, new int[]{2,1 })); // 5
-            System.out.println(sol.bestTeamScore(new int[]{6,4,4,4,5,5 }, new int[]{2,2,2,2,1,1 })); // 18
+            System.out.println(sol.bestTeamScore(new int[]{1, 2, 3, 5}, new int[]{8, 9, 10, 1})); // 6
+            System.out.println(sol.bestTeamScore(new int[]{6, 4, 5, 5}, new int[]{2, 2, 1, 1})); // 16
+            System.out.println(sol.bestTeamScore(new int[]{4, 4, 5}, new int[]{2, 2, 1})); // 8
+            System.out.println(sol.bestTeamScore(new int[]{4, 5}, new int[]{2, 1})); // 5
+            System.out.println(sol.bestTeamScore(new int[]{6, 4, 4, 4, 5, 5}, new int[]{2, 2, 2, 2, 1, 1})); // 18
         }
     }
 }
@@ -22,7 +22,7 @@ class Solution {
             for (int j = i + 1; j < scores.length; j++) {
                 if (ages[j] > ages[bestJ]) {
                     bestJ = j;
-                } else if (ages[j] == ages[bestJ] && scores[j] > scores[bestJ]){
+                } else if (ages[j] == ages[bestJ] && scores[j] > scores[bestJ]) {
                     bestJ = j;
                 }
             }
@@ -55,7 +55,7 @@ class Solution {
         int prevMinScorePreviousAge = minScorePreviousAge;
         int prevMinScoreCurrentAge = minScoreCurrentAge;
 
-        if  (ix > 0 && age != ages[ix - 1]) {
+        if (ix > 0 && age != ages[ix - 1]) {
             minScorePreviousAge = minScoreCurrentAge;
             minScoreCurrentAge = 1000001;
         }

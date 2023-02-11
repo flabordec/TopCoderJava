@@ -28,7 +28,7 @@ class Solution {
     }
 
     public static void main(String[] args) {
-         var solution = new Solution();
+        var solution = new Solution();
 
         {
             int[] edges = new int[]{2, 2, 3, -1};
@@ -47,7 +47,7 @@ class Solution {
         }
 
         {
-            int[] edges = new int[]{4,3,0,5,3,-1};
+            int[] edges = new int[]{4, 3, 0, 5, 3, -1};
             int node1 = 4;
             int node2 = 0;
             int result = solution.closestMeetingNode(edges, node1, node2);
@@ -55,7 +55,7 @@ class Solution {
         }
 
         {
-            int[] edges = new int[]{5,4,5,4,3,6,-1};
+            int[] edges = new int[]{5, 4, 5, 4, 3, 6, -1};
             int node1 = 0;
             int node2 = 1;
             int result = solution.closestMeetingNode(edges, node1, node2);
@@ -63,7 +63,7 @@ class Solution {
         }
 
         {
-            int[] edges = new int[]{4,4,8,-1,9,8,4,4,1,1};
+            int[] edges = new int[]{4, 4, 8, -1, 9, 8, 4, 4, 1, 1};
             int node1 = 5;
             int node2 = 6;
             int result = solution.closestMeetingNode(edges, node1, node2);

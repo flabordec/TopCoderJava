@@ -7,7 +7,7 @@ class Scratch {
         Solution sol = new Solution();
         {
             println(sol.shortestAlternatingPaths(3, new int[][]{new int[]{0, 1}, new int[]{1, 2}}, new int[][]{}));
-            println(sol.shortestAlternatingPaths(3, new int[][]{new int[]{0, 1}}, new int[][]{new int[]{2,1}}));
+            println(sol.shortestAlternatingPaths(3, new int[][]{new int[]{0, 1}}, new int[][]{new int[]{2, 1}}));
             println(sol.shortestAlternatingPaths(3, new int[][]{new int[]{0, 1}}, new int[][]{new int[]{1, 2}}));
         }
     }

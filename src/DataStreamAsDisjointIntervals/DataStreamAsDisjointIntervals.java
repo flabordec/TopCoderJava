@@ -48,6 +48,7 @@ class SummaryRanges {
             this.end = end;
         }
     }
+
     private ArrayList<Range> ranges = new ArrayList<>();
 
     public SummaryRanges() {
@@ -62,7 +63,7 @@ class SummaryRanges {
 
         int ix = binarySearch(ranges, 0, ranges.size(), value);
         if (ix < 0) {
-            ix = - ix - 1;
+            ix = -ix - 1;
             // not found
             if (ix - 1 >= 0 && value >= ranges.get(ix - 1).start && value <= ranges.get(ix - 1).end) {
                 // no op, already in range
@@ -87,7 +88,7 @@ class SummaryRanges {
     public int[][] getIntervals() {
         int[][] ret = new int[ranges.size()][];
         for (int i = 0; i < ranges.size(); i++) {
-            ret[i] = new int[]{ ranges.get(i).start, ranges.get(i).end };
+            ret[i] = new int[]{ranges.get(i).start, ranges.get(i).end};
         }
         return ret;
     }
